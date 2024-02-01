@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#cabecalho{
+    background-color:#0b1825;
+    padding: 8px;
+    padding-right: 38px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content:space-between;
+    font-size: 28px;
+    color: white;
+}
+
+h2{
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+        max-width: 200px;
+        height: auto;
+}
