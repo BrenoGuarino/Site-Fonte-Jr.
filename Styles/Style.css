@@ -22,3 +22,81 @@ h2{
         max-width: 200px;
         height: auto;
 }
+
+/*Inicio Pedro*/
+.carrossel1{
+    max-width:600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 600px;
+    img {
+        max-width:80%;
+    }
+}
+
+.carrossel2{
+    max-width:600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    
+    img {
+        margin-bottom: 15px;
+        width: 60%;
+        max-width:80%;
+        
+    }
+}
+.antApresenta, .proxApresenta {
+    cursor: pointer;
+    position: absolute;
+    padding: 16px;
+    margin-top: -318px;
+    color: white;
+    background-color:rgba(0,0,0,0.1);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .proxApresenta {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+.antApresenta:hover, .proxApresenta:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+.antCliente, .proxCliente {
+    cursor: pointer;
+    position:absolute;
+    width: auto;
+    padding: 16px;
+    margin-top: -233px;
+    color: white;
+    background-color:rgba(0,0,0,0.1);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .proxCliente {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+.antCliente:hover, .proxCliente:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+
+  /*Fim Pedro*/
+
