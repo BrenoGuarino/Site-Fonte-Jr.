@@ -72,6 +72,23 @@ h2{
     right: 0;
     border-radius: 3px 0 0 3px;
   }
+
+  /* Início Serviços (Bernardo) */
+
+  .servicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .servicos-linha-1, .servicos-linha-2{
+    display: flex;
+    gap: 10vh;
+  }
+
+  /* Fim Serviços (Bernardo) */
+
 .antApresenta:hover, .proxApresenta:hover {
 background-color: rgba(0,0,0,0.8);
 }
