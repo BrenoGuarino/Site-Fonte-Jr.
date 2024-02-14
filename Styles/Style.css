@@ -74,6 +74,9 @@ h2{
         
     }
 }
+
+
+  /* Position the "next button" to the right */
 .antCliente, .proxCliente {
     cursor: pointer;
     position:absolute;
