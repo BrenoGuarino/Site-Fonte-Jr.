@@ -25,63 +25,61 @@ h2{
 
 /*Inicio Pedro*/
 
-.carrossel1{
-  max-width:600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  margin:auto;
-  height: 600px;
-  img {
-    max-width:80%;
-    
-  }
+#Apresentacao{
+  height:400px;
+    p{
+      font-size: 48px;
+      border-left: 3px solid #999999;
+      margin-left: 40px;
+    }
+    img{
+      filter: blur(8px);
+      max-height: 400px;
+      position: relative;
+    }
 }
 
-.carrossel2{
+.divApresenta {
+  height: 400px;
+  position: relative;
+}
+
+#spaceText {
+  padding-right: 16px;
+}
+
+#imgApresenta {
+  width: 1600px;
+  height: 400px;
+}
+
+.textDivApresenta{
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.carrossel1{
+  margin-top: 15px;
     max-width:600px;
+    height:400px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    height: 400px;
     img {
         margin-bottom: 15px;
-        width: 60%;
-        max-width:80%;
+        width: 200px;
+        max-width:200px;
         
     }
 }
-.antApresenta, .proxApresenta {
-    cursor: pointer;
-    position: absolute;
-    padding: 16px;
-    margin-top: -318px;
-    color: white;
-    background-color:rgba(0,0,0,0.1);
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .proxApresenta {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-.antApresenta:hover, .proxApresenta:hover {
-background-color: rgba(0,0,0,0.8);
-}
-
 .antCliente, .proxCliente {
     cursor: pointer;
     position:absolute;
     width: auto;
     padding: 16px;
-    margin-top: -233px;
+    margin-top: 170px;
     color: white;
     background-color:rgba(0,0,0,0.1);
     font-weight: bold;
@@ -91,7 +89,6 @@ background-color: rgba(0,0,0,0.8);
     user-select: none;
   }
   
-  /* Position the "next button" to the right */
   .proxCliente {
     right: 0;
     border-radius: 3px 0 0 3px;
@@ -100,6 +97,9 @@ background-color: rgba(0,0,0,0.8);
 background-color: rgba(0,0,0,0.8);
 }
 
-
+#Clientes{
+  display: flex;
+  flex-direction: row;
+}
   /*Fim Pedro*/
 
