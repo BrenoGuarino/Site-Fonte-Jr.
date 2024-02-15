@@ -59,6 +59,22 @@ h2{
  left: 0;
 }
 
+/* Início Serviços (Bernardo) */
+
+.servicos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicos-linha-1, .servicos-linha-2{
+  display: flex;
+  gap: 10vh;
+}
+
+/* Fim Serviços (Bernardo) */
+
 .carrossel1{
   margin-top: 15px;
     max-width:600px;
