@@ -4,23 +4,31 @@ body{
 }
 #cabecalho{
     background-color:#0b1825;
-    padding: 8px;
-    padding-right: 38px;
-    padding-bottom: 20px;
+    height: 120px;
+    padding: 20px;
+    padding-right: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     display: flex;
     justify-content:space-between;
     font-size: 28px;
+    font-family:'Times New Roman', Times, serif;
     color: white;
 }
 
 h2{
     align-items: center;
     justify-content: center;
+    font-size: 25px;
+    margin-top: 0px;
+    padding-top: 43px;
+    margin-bottom: 0px;
+    
 }
 
 .logo img {
-        max-width: 200px;
-        height: auto;
+        max-width: auto;
+        height: 120px;
 }
 
 /*Inicio Pedro*/
@@ -31,6 +39,7 @@ h2{
       font-size: 48px;
       border-left: 3px solid #999999;
       margin-left: 40px;
+      width: 200px;
     }
     img{
       filter: blur(8px);
