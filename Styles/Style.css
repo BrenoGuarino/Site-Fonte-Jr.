@@ -1,51 +1,54 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-#cabecalho{
-    background-color:#0b1825;
-    height: 120px;
-    padding: 20px;
-    padding-right: 40px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    display: flex;
-    justify-content:space-between;
-    font-size: 28px;
-    font-family:'Times New Roman', Times, serif;
-    color: white;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-h2{
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    margin-top: 0px;
-    padding-top: 43px;
-    margin-bottom: 0px;
-    
+#cabecalho {
+  background-color: #0b1825;
+  height: 120px;
+  padding: 20px;
+  padding-right: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 28px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
 }
 
-.logo img {
-        max-width: auto;
-        height: 120px;
+h2 {
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin-top: 0px;
+  padding-top: 43px;
+  margin-bottom: 0px;
+
+}
+
+.logo img, .div-conteudo-contato > div > img {
+  max-width: auto;
+  height: 120px;
 }
 
 /*Inicio Pedro*/
 
-#Apresentacao{
-  height:400px;
-    p{
-      font-size: 48px;
-      border-left: 3px solid #999999;
-      margin-left: 40px;
-      width: 200px;
-    }
-    img{
-      filter: blur(8px);
-      max-height: 400px;
-      position: relative;
-    }
+#Apresentacao {
+  height: 400px;
+
+  p {
+    font-size: 48px;
+    border-left: 3px solid #999999;
+    margin-left: 40px;
+    width: 200px;
+  }
+
+  img {
+    filter: blur(8px);
+    max-height: 400px;
+    position: relative;
+  }
 }
 
 .divApresenta {
@@ -62,72 +65,134 @@ h2{
   height: 400px;
 }
 
-.textDivApresenta{
- position: absolute;
- top: 0;
- left: 0;
+.textDivApresenta {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* Início Serviços (Bernardo) */
 
-.servicos{
+.servicos {
+  display: flex;
+  margin: 5vh;
+}
+
+.div-servicos {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.servicos-linha-1, .servicos-linha-2{
+.div-conteudo-servicos {
   display: flex;
-  gap: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.linha-1-servicos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+  text-align: center;
 }
 
 /* Fim Serviços (Bernardo) */
 
-.carrossel1{
+.carrossel1 {
   margin-top: 15px;
-    max-width:600px;
-    height:400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    img {
-        margin-bottom: 15px;
-        width: 200px;
-        max-width:200px;
-        
-    }
+  max-width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  img {
+    margin-bottom: 15px;
+    width: 200px;
+    max-width: 200px;
+
+  }
 }
 
 
-  /* Position the "next button" to the right */
-.antCliente, .proxCliente {
-    cursor: pointer;
-    position:absolute;
-    width: auto;
-    padding: 16px;
-    margin-top: 170px;
-    color: white;
-    background-color:rgba(0,0,0,0.1);
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  .proxCliente {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-.antCliente:hover, .proxCliente:hover {
-background-color: rgba(0,0,0,0.8);
+/* Position the "next button" to the right */
+.antCliente,
+.proxCliente {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  margin-top: 170px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-#Clientes{
+.proxCliente {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.antCliente:hover,
+.proxCliente:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#Clientes {
   display: flex;
   flex-direction: row;
 }
-  /*Fim Pedro*/
 
+/*Fim Pedro*/
+
+/* Início Contatos (Bernardo) */
+
+.contato {
+  display: flex;
+  margin: 5vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-titulo-contato{
+  margin-bottom: 2vh;
+}
+
+.div-conteudo-contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10vh;
+}
+
+.div-contato-redes-sociais{
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  
+}
+
+.div-contato-redes-sociais > a {
+  padding: 10px;
+  background-color: #00abe3;
+  text-decoration: none;
+  color: black;
+  transition: all 300ms;
+}
+
+.div-contato-redes-sociais > a:hover {
+  background-color: #86c5da;
+  transition: 300ms;
+}
+
+/* Fim Contatos (Bernardo) */
