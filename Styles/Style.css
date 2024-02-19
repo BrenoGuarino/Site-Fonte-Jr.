@@ -27,7 +27,8 @@ h2 {
 
 }
 
-.logo img, .div-conteudo-contato > div > img {
+.logo img,
+.div-conteudo-contato>div>img {
   max-width: auto;
   height: 120px;
 }
@@ -164,7 +165,7 @@ h2 {
   justify-content: center;
 }
 
-.div-titulo-contato{
+.div-titulo-contato {
   margin-bottom: 2vh;
 }
 
@@ -175,14 +176,14 @@ h2 {
   gap: 10vh;
 }
 
-.div-contato-redes-sociais{
+.div-contato-redes-sociais {
   display: flex;
   flex-direction: column;
   gap: 5vh;
-  
+
 }
 
-.div-contato-redes-sociais > a {
+.div-contato-redes-sociais>a {
   padding: 10px;
   background-color: #00abe3;
   text-decoration: none;
@@ -190,7 +191,7 @@ h2 {
   transition: all 300ms;
 }
 
-.div-contato-redes-sociais > a:hover {
+.div-contato-redes-sociais>a:hover {
   background-color: #86c5da;
   transition: 300ms;
 }
