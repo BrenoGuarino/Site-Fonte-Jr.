@@ -110,15 +110,15 @@ h2 {
 .linha-1-servicos,
 .linha-2-servicos {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
+  gap: 10vh;
 }
 
 /* Fim Serviços (Bernardo) */
 
-.carrossel1,.carrossel2,.carrossel3 {
+.carrossel1, .carrossel2, .carrossel3 {
   margin-top: 15px;
   max-width: 600px;
   height: 400px;
