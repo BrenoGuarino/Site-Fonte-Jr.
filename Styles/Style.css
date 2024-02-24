@@ -90,14 +90,18 @@ h2 {
 
 .servicos {
   display: flex;
-  margin: 5vh;
 }
 
 .div-servicos {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+}
+
+.div-titulo-servicos {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .div-conteudo-servicos {
@@ -107,18 +111,51 @@ h2 {
   justify-content: center;
 }
 
+
 .linha-1-servicos,
 .linha-2-servicos {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 10vh;
+  gap: 10em;
+  margin: 3em;
 }
+
+.linha-1-servicos>div,
+.linha-2-servicos>div {
+  width: 60%;
+  padding: 1.5em;
+  border: 0.5px solid #CACACA;
+  border-radius: 1em;
+  transition: all 500ms;
+}
+
+.linha-1-servicos>div:hover,
+.linha-2-servicos>div:hover {
+  padding: 2em;
+  border: 0.5px solid #fa8200;
+  transition: 500ms;
+}
+
+.linha-1-servicos>div>h2,
+.linha-2-servicos>div>h2 {
+  padding: 0.5em;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.linha-1-servicos>div>p,
+.linha-2-servicos>div>p {
+  font-size: 15px;
+  text-indent: 15px;
+  text-align: justify;
+}
+
 
 /* Fim Serviços (Bernardo) */
 
-.carrossel1, .carrossel2, .carrossel3 {
+.carrossel1,
+.carrossel2,
+.carrossel3 {
   margin-top: 15px;
   max-width: 600px;
   height: 400px;
@@ -182,6 +219,7 @@ h2 {
 
 .div-titulo-contato {
   margin-bottom: 2vh;
+  font-size: 30px;
 }
 
 .div-conteudo-contato {
