@@ -1,4 +1,4 @@
-body {
+*{
   margin: 0px;
   padding: 0px;
 }
@@ -35,7 +35,9 @@ h2 {
 /*Inicio Pedro*/
 
 #Apresentacao {
-  height: 600px;
+  height: 500px;
+  padding:0px;
+  padding-top:0px;
   margin-top: 0px;
 
   h1 {
@@ -43,7 +45,7 @@ h2 {
     font-size: 48px;
     text-align: justify;
     color:white;
-    text-shadow: 2px 2px rgba(16, 16, 13, 0.493);
+    text-shadow: 2px 2px rgba(16, 16, 13, 0.700);
 
   }
 
@@ -68,17 +70,21 @@ h2 {
 }
 
 .divApresenta {
-  height: 600px;
+  width:100vw;
   background-image: url(../Imagens/Banner\ do\ site.png);
-  background-size: cover;
+  background-size:cover;
+  background-position: center;
+  background-position-y: center;
   background-repeat: no-repeat;
-  /*position: relative;*/
+
 }
 
 #spaceText {
+  height: 400px;
   width: 600px;
+  padding-top: 5vh;
   padding-right: 16px;
-  margin-left: 800px;
+  margin-left: 50vw;
   margin-right: 30px;
 }
 
