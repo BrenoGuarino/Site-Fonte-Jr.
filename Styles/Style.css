@@ -74,7 +74,7 @@ h2 {
   padding-right: 16px;
 }
 
-#imgApresenta {
+/*#imgApresenta {
   width: 1600px;
   height: 400px;
 }
@@ -83,7 +83,7 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
-}
+}*/
 
 /* Início Serviços (Bernardo) */
 
@@ -152,10 +152,8 @@ h2 {
 
 /* Fim Serviços (Bernardo) */
 
-/*.carrossel1,
-.carrossel2,
-.carrossel3 {
-  margin-top: 15px;
+/*.carrossel1, .carrossel2, .carrossel3 {
+    margin-top: 15px;
   max-width: 600px;
   height: 400px;
   display: flex;
@@ -168,7 +166,6 @@ h2 {
     width: 200px;
     max-width: 200px;
 
-  }
 }*/
 
 
@@ -218,8 +215,6 @@ h2 {
 
 .div-titulo-contato {
   margin-bottom: 2vh;
-  font-size: 30px;
-  text-align: center;
 }
 
 .div-conteudo-contato {
