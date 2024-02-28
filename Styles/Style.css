@@ -46,7 +46,7 @@ h2 {
     text-align: justify;
     color:white;
     text-shadow: 2px 2px rgba(16, 16, 13, 0.700);
-
+    font-family: Roboto;
   }
 
   /*p {
@@ -70,7 +70,7 @@ h2 {
 }
 
 .divApresenta {
-  width:100vw;
+  width:98.85vw;
   background-image: url(../Imagens/Banner\ do\ site.png);
   background-size:cover;
   background-position: center;
@@ -115,6 +115,7 @@ h2 {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
+  margin: 5vh;
 }
 
 .div-conteudo-servicos {
@@ -135,6 +136,7 @@ h2 {
 .linha-1-servicos>div,
 .linha-2-servicos>div {
   width: 60%;
+  text-align: center;
   padding: 1.5em;
   border: 0.5px solid #CACACA;
   border-radius: 1em;
@@ -148,17 +150,14 @@ h2 {
   transition: 500ms;
 }
 
-.linha-1-servicos>div>h2,
-.linha-2-servicos>div>h2 {
-  padding: 0.5em;
-  font-size: 20px;
-  text-align: center;
-  font-weight: bold;
+.imgServ{
+  width: 50%;
+  margin-bottom: 5vh;
 }
 
 .linha-1-servicos>div>p,
 .linha-2-servicos>div>p {
-  font-size: 15px;
+  font-size: 20px;
   text-indent: 15px;
   text-align: justify;
 }
@@ -221,14 +220,22 @@ h2 {
 
 .contato {
   display: flex;
-  margin: 5vh;
+  padding-bottom: 10vh;
+  padding-top: 10vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #021E30;
+  
 }
 
 .div-titulo-contato {
-  margin-bottom: 2vh;
+  margin-bottom: 5vh;
+}
+
+.div-titulo-contato>h1{
+  font-size: 40px;
+  color: white;
 }
 
 .div-conteudo-contato {
