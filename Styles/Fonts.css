@@ -2,3 +2,13 @@
     font-family: "Roboto";
     src: url(Fontes\Roboto-Regular.ttf);
 }
+
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url(Fontes\open-sans.regular.ttf);
+}
+
+@font-face {
+    font-family: "OpenSansItalic";
+    src: url(Fontes\open-sans.italic.ttf);
+}
