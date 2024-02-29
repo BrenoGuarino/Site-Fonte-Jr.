@@ -1,7 +1,8 @@
-body {
-  margin: 0;
-  padding: 0;
+*{
+  margin: 0px;
+  padding: 0px;
 }
+
 header{
   position: fixed;
   height: 80px;
@@ -18,56 +19,49 @@ header{
   display: flex;
   justify-content: space-between;
   font-size: 28px;
+  font-family: 'Times New Roman', Times, serif;
   color: white;
-}
-
-ul{
-  padding-bottom: 25px;
-  padding-top: 25px;
-  margin-bottom: 0;
-  margin-top: 0;
-  height: 30px;
 }
 
 li {
-  display: inline-block;
-  font-size: 20px;
-  justify-content:space-between;
-  padding-left: 10px;
-  font-family: "OpenSansRegular";
-  color: inherit;
-  color: white;
+  
 }
+
+
 
 .logo img,
 .div-conteudo-contato>div>img {
   max-width: auto;
-  height: 80px;
+  height: 120px;
 }
 
 /*Inicio Pedro*/
 
 #Apresentacao {
-  height: 400px;
+  height: 500px;
+  padding:0px;
+  padding-top:0px;
+  margin-top: 0px;
 
   h1 {
+    width: 600px;
     font-size: 48px;
-    border-left: 3px solid #999999;
-    margin-left: 30px;
-    margin-right: 30px;
     text-align: justify;
+    color:white;
+    text-shadow: 2px 2px rgba(16, 16, 13, 0.700);
+    font-family: Roboto;
   }
 
-  p {
+  /*p {
     font-size: 36px;
     margin-left: 40px;
     margin-right: 40px;
     width: 1hw;
     text-align: justify;
     text-indent: 36px;
-  }
+  }*/
 
-  img {
+  /*img {
     filter: blur(8px);
     max-height: 400px;
     position: relative;
@@ -75,19 +69,29 @@ li {
     margin: auto;
     display: block;
 
-  }
+  }*/
 }
 
 .divApresenta {
-  height: 400px;
-  position: relative;
+  width:98.85vw;
+  background-image: url(../Imagens/Banner\ do\ site.png);
+  background-size:cover;
+  background-position: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+
 }
 
 #spaceText {
+  height: 400px;
+  width: 600px;
+  padding-top: 5vh;
   padding-right: 16px;
+  margin-left: 50vw;
+  margin-right: 30px;
 }
 
-#imgApresenta {
+/*#imgApresenta {
   width: 1600px;
   height: 400px;
 }
@@ -96,20 +100,25 @@ li {
   position: absolute;
   top: 0;
   left: 0;
-}
+}*/
 
 /* Início Serviços (Bernardo) */
 
 .servicos {
   display: flex;
-  margin: 5vh;
 }
 
 .div-servicos {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+}
+
+.div-titulo-servicos {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin: 5vh;
 }
 
 .div-conteudo-servicos {
@@ -119,19 +128,48 @@ li {
   justify-content: center;
 }
 
+
 .linha-1-servicos,
 .linha-2-servicos {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  gap: 10em;
+  margin: 3em;
 }
+
+.linha-1-servicos>div,
+.linha-2-servicos>div {
+  width: 60%;
+  text-align: center;
+  padding: 1.5em;
+  border: 0.5px solid #CACACA;
+  border-radius: 1em;
+  transition: all 500ms;
+}
+
+.linha-1-servicos>div:hover,
+.linha-2-servicos>div:hover {
+  padding: 2em;
+  border: 0.5px solid #fa8200;
+  transition: 500ms;
+}
+
+.imgServ{
+  width: 50%;
+  margin-bottom: 5vh;
+}
+
+.linha-1-servicos>div>p,
+.linha-2-servicos>div>p {
+  font-size: 20px;
+  text-indent: 15px;
+  text-align: justify;
+}
+
 
 /* Fim Serviços (Bernardo) */
 
-.carrossel1,.carrossel2,.carrossel3 {
-  margin-top: 15px;
+/*.carrossel1, .carrossel2, .carrossel3 {
+    margin-top: 15px;
   max-width: 600px;
   height: 400px;
   display: flex;
@@ -144,12 +182,11 @@ li {
     width: 200px;
     max-width: 200px;
 
-  }
-}
+}*/
 
 
 /* Position the "next button" to the right */
-.antCliente,
+/*.antCliente,
 .proxCliente {
   cursor: pointer;
   position: absolute;
@@ -178,7 +215,7 @@ li {
 #Clientes {
   display: flex;
   flex-direction: row;
-}
+}*/
 
 /*Fim Pedro*/
 
@@ -186,19 +223,26 @@ li {
 
 .contato {
   display: flex;
-  margin: 5vh;
+  padding-bottom: 10vh;
+  padding-top: 10vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: #00abe3; */
+  background-color: #021E30;
+  
 }
 
 .div-titulo-contato {
-  margin-bottom: 2vh;
+  margin-bottom: 5vh;
+}
+
+.div-titulo-contato>h1{
+  font-size: 40px;
+  color: white;
 }
 
 .div-conteudo-contato {
-  display: flex;
+ display: flex;
   align-items: center;
   justify-content: center;
   gap: 10vh;

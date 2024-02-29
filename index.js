@@ -1,4 +1,4 @@
-let slideIndexCliente1 = 0;
+/*let slideIndexCliente1 = 0;
 let slideIndexCliente2 = 0;
 let slideIndexCliente3 = 0;
 autoShowSlidesCliente1();
@@ -39,7 +39,8 @@ function autoShowSlidesCliente3() {
   if (slideIndexCliente3 > slidesCliente3.length) {slideIndexCliente3 = 1}
   slidesCliente3[slideIndexCliente3-1].style.display = "block";
   setTimeout(autoShowSlidesCliente3, 3000);
-}
+}*/
+
 
 
  
