@@ -4,12 +4,14 @@
 }
 
 header{
-  position: fixed;
+  
   height: 80px;
-  width:100%;
+  
 }
 
 #cabecalho {
+  position: fixed;
+  width: 1300px;
   background-color: #021E30;
   height: 80px;
   padding: 20px;
@@ -18,21 +20,40 @@ header{
   padding-bottom: 0px;
   display: flex;
   justify-content: space-between;
-  font-size: 28px;
+  font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
   color: white;
 }
 
+.logo {
+  padding-bottom: 20px;
+  height: 20px;
+}
+
 li {
-  
+  display: inline-block;
+  margin: 0px;
+  font-size: 20px;
+  height: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 15px;
+  color: inherit;
+  color: white;
+  font-family: "OpenSansRegular";
+}
+
+li :hover {
+  color: #fa8200;
+  transition: 200ms;
 }
 
 
 
 .logo img,
 .div-conteudo-contato>div>img {
-  max-width: auto;
-  height: 120px;
+  max-width: 1300px;
+  height: 80px;
 }
 
 /*Inicio Pedro*/
@@ -45,11 +66,14 @@ li {
 
   h1 {
     width: 600px;
-    font-size: 48px;
-    text-align: justify;
-    color:white;
+    height: 400px;
+    font-size: 58px;
+    text-align:start;
+    padding-left: 30px;
+    color:rgb(255, 255, 255);
     text-shadow: 2px 2px rgba(16, 16, 13, 0.700);
-    font-family: Roboto;
+    text-decoration: solid;
+    font-family: "OpenSansRegular";
   }
 
   /*p {
@@ -85,10 +109,11 @@ li {
 #spaceText {
   height: 400px;
   width: 600px;
-  padding-top: 5vh;
-  padding-right: 16px;
-  margin-left: 50vw;
-  margin-right: 30px;
+  padding-top: 8vh;
+  padding-bottom: 0vh;
+  /* padding-right: 16px; */
+  margin-left: 53vw;
+  /* margin-right: 30px; */
 }
 
 /*#imgApresenta {
