@@ -94,10 +94,12 @@ li :hover {
     display: block;
 
   }*/
+
 }
 
 .divApresenta {
-  width:98.85vw;
+  /* width:98.86vw; */
+  width: 100%;
   background-image: url(../Imagens/Banner\ do\ site.png);
   background-size:cover;
   background-position: center;
@@ -111,8 +113,9 @@ li :hover {
   width: 600px;
   padding-top: 8vh;
   padding-bottom: 0vh;
+  /* padding-left: 10px; */
   /* padding-right: 16px; */
-  margin-left: 53vw;
+  margin-left: 52vw;
   /* margin-right: 30px; */
 }
 
@@ -143,7 +146,7 @@ li :hover {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
-  margin: 5vh;
+  margin: 4vh;
 }
 
 .div-conteudo-servicos {
