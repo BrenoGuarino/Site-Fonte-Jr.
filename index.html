@@ -4,34 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles\Style.css">
+    <link rel="stylesheet" href="Styles/Style.css">
     <link rel="stylesheet" href="Styles/Fonts.css">
     <script type="module" src="index.js"></script>
     <title>Fonte Jr.</title>
-
 </head>
 
 <body>
 
     <header>
         <div id="cabecalho">
-            <div><a href="" class="logo"> <img src="Imagens\LogoHorizontal_SemFundo.png" alt=""></a></div>
-
-            <ul>
-                <a href="#"><li>Sobre a Fonte Jr.</li></a>
-                <a href="#"><li>Nossos Serviços</li></a>
-                <a href="#"><li>Cases de Sucesso</li></a>
-                <a href="#"><li>Contato</li></a>
-            </ul>
-
-        </div>    
-
-
+            <div><a href="/" class="logo"> <img src="Imagens/LogoHorizontal_SemFundo.png" alt="Logo Fonte Jr."></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Sobre a Fonte Jr.</a></li>
+                    <li><a href="servicos.html">Nossos Serviços</a></li>
+                    <li><a href="#">Cases de Sucesso</a></li>
+                    <li><a href="#contatos">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <!-- Início Apresetação (Pedro) -->
-    <div id="Apresentacao" class="divApresenta">
-        <!-- <img id="imgApresenta" src="Imagens/Cópia de Logo Completa (1).png">-->
 
+    <!-- Início Apresentação -->
+    <section id="Apresentacao" class="divApresenta">
+        <!-- <img id="imgApresenta" src="Imagens/Cópia de Logo Completa (1).png" alt="Logo Completa">-->
         <div class="textDivApresenta">
             <h1 id="spaceText">Na Fonte Jr., transformamos conhecimento em soluções, e criatividade em resultados
                 tangíveis.</h1>
@@ -39,108 +37,83 @@
                 dos cursos de Sistemas de Informação, Engenharia Metalúrgica, Engenharia Mecatrônica, Engenharia
                 Elétrica e Design de Interiores para criar soluções eficientes e de excelência.</p>-->
         </div>
-    </div>
-    <!-- Final Apresetação (Pedro) -->
+    </section>
+    <!-- Final Apresentação -->
 
-    <!-- Início Serviços (Bernardo) -->
-    <div class="servicos">
-        <div class="div-servicos">
-            <div id="servicos" class="div-titulo-servicos">
-                <h1>Serviços</h1>
-            </div>
-            <div class="div-conteudo-servicos">
-                <div class="linha-1-servicos">
-                    <div>
-                        <img class="imgServ" src="Imagens/CapacitaçãoFrontEnd.png" alt="CapacitaçãoFrontEnd">
-                        <p>A Fonte Jr. oferece capacitações especializadas em desenvolvimento e aplicações web,
-                            proporcionando treinamentos abrangentes e práticos para indivíduos e equipes. Nosso
-                            objetivo
-                            é capacitar profissionais com as habilidades necessárias para criarem projetos web e/ou
-                            aplicar manutenção em sites existentes.
-                        </p>
-                    </div>
-                    <div>
-                        <img class="imgServ" src="Imagens/ConsultoriaDI.png" alt="ConsultoriaDI">
-                        <p>O design de interiores na Fonte Júnior, vem promover identidade e personalidade aos
-                            ambientes. Através da consultoria de interiores, você receberá pranchas completas com
-                            possíveis cores, matérias, mobiliários e layouts que garantem o bem-estar do usuário A
-                            consultoria é um caminho que possibilita a reforma/obra de forma independente, ajudando na
-                            redução de gasto e orientação certeira dos possíveis recursos a serem aplicados no ambiente.
-                        </p>
-                    </div>
-                </div>
-                <div class="linha-2-servicos">
-                    <div>
-                        <img class="imgServ" src="Imagens/DesenvolvimentoWeb.png" alt="DesenvolvimentoWeb">
-                        <p>Desenvolvimento de sites sob medida para atender às necessidades exclusivas de cada cliente.
-                            Com expertise técnica e criativa, a Fonte Jr. garante soluções digitais de alta qualidade.
-                            Conte conosco para criar uma presença online impactante e eficiente para o seu negócio.</p>
-                    </div>
-                    <div>
-                        <img class="imgServ" src="Imagens/EficienciaEnergetica.png" alt="EficienciaEnergetica">
-                        <p>A Engenharia Mecatrônica vem crescendo muito no mercado de trabalho, e atualmente na Fonte
-                            Junior estudamos e prestamos o serviço de consultoria em eficiência energética. Além de ser
-                            inovadora, reduz custos e melhora a sustentabilidade.
-                            Hoje, é preciso entender que a engenharia do futuro precisa estar andando lado a lado com
-                            preservação do meio ambiente.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Fim Serviços (Bernardo) -->
+    <!-- Início Serviços -->
+    <section class="services-section" id="services">
+        <h2>Serviços</h2>
+        <button>
+            <a href="servicos.html" class="services-link">Conheça nossos serviços</a>
+        </button>
+    </section>
+    <!-- Fim Serviços -->
 
-    <!-- Início Nossos Clientes (Pedro) -->
-    <!--<div id="Clientes">
+    <!-- Início Nossos Clientes -->
+    <!--
+    <section id="Clientes">
         <div class="carrossel1">
-            <img onload="autoShowSlidesCliente1()" class="clienteSlide1"
-                src="Imagens/Lorem-ipsum-logo-isolated-clipart-PNG.png">
-            <img class="clienteSlide1" src="Imagens/logo.png">
-            <img class="clienteSlide1" src="Imagens/Lorem-ipsum-logo-isolated-clipart-PNG.png">
+            <img onload="autoShowSlidesCliente1()" class="clienteSlide1" src="Imagens/Lorem-ipsum-logo-isolated-clipart-PNG.png" alt="Cliente 1">
+            <img class="clienteSlide1" src="Imagens/logo.png" alt="Cliente 2">
+            <img class="clienteSlide1" src="Imagens/Lorem-ipsum-logo-isolated-clipart-PNG.png" alt="Cliente 3">
         </div>
         <div class="carrossel2">
-            <img onload="autoShowSlidesCliente2()" class="clienteSlide2"
-                src="Imagens/Lorem-ipsum-logo-isolated-clipart-PNG.png">
-            <img class="clienteSlide2" src="Imagens/logo.png">
-            <img class="clienteSlide2" src="Imagens/Lorem-ipsum-logo-isolated-clipart-PNG.png">
+            <img onload="autoShowSlidesCliente2()" class="clienteSlide2" src="Imagens/Lorem-ipsum-logo-isolated-clipart-PNG.png" alt="Cliente 4">
+            <img class="clienteSlide2" src="Imagens/logo.png" alt="Cliente 5">
+            <img class="clienteSlide2" src="Imagens/Lorem-ipsum-logo-isolated-clipart-PNG.png" alt="Cliente 6">
         </div>
         <div class="carrossel3">
-            <img onload="autoShowSlidesCliente3()" class="clienteSlide3"
-                src="Imagens/Lorem-ipsum-logo-isolated-clipart-PNG.png">
-            <img class="clienteSlide3" src="Imagens/logo.png">
-            <img class="clienteSlide3" src="Imagens/Lorem-ipsum-logo-isolated-clipart-PNG.png">
+            <img onload="autoShowSlidesCliente3()" class="clienteSlide3" src="Imagens/Lorem-ipsum-logo-isolated-clipart-PNG.png" alt="Cliente 7">
+            <img class="clienteSlide3" src="Imagens/logo.png" alt="Cliente 8">
+            <img class="clienteSlide3" src="Imagens/Lorem-ipsum-logo-isolated-clipart-PNG.png" alt="Cliente 9">
         </div>
         <br>
         <button class="antCliente" type="button">&#10094;</button>
         <button class="proxCliente" type="button">&#10095;</button>
-    </div>-->
-    <!-- Fim Nossos Clientes (Pedro) -->
+    </section>
+    -->
+    <!-- Fim Nossos Clientes -->
 
+    <!-- Início Contato -->
+    <footer class="contact-section" id="contatos">
+        <div class="contact-header">
+            <h2>Contato</h2>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form">
+                <form action="https://formsubmit.co/phvasconcelos@fontejr.com.br" method="POST">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name">
 
-    <!-- Início Contato (Bernardo) -->
-    <div class="contato">
-        <div class="div-titulo-contato">
-            <h1>Contato</h1>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <button type="submit" id="form">Enviar</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5463426292416!2d-46.63330928437603!3d-23.55524778468596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8d9f1b1a9%3A0x12d1b6a7f1762034!2sAv.%20Paulista%2C%202000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-200%2C%20Brasil!5e0!3m2!1sen!2sus!4v1628286014593!5m2!1sen!2sus"></iframe>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/fontejr/" target="_blank"><img src="Imagens/instagram.png" alt=""
+                            href=""></a>
+                    <a href="https://www.linkedin.com/company/fontejr/mycompany/" target="_blank"><img
+                            src="Imagens/linkedin.png" alt="" href=""></a>
+                    <a href="https://www.facebook.com/fontejunior/" target="_blank"><img src="Imagens/facebook.png"
+                            alt="" href=""></a>
+                </div>
+            </div>
         </div>
-        <div class="div-conteudo-contato">
-            <div>
-                <img src="Imagens\Cópia de Logo Completa (1).png" alt="">
-            </div>
-            <div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14823.947512833302!2d-43.3743867!3d-21.7420344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c651d326169%3A0xcd3102b5975c4903!2sFonte%20Jr!5e0!3m2!1spt-BR!2sbr!4v1708783941976!5m2!1spt-BR!2sbr"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="div-contato-redes-sociais">
-                <a href="https://www.instagram.com/fontejr/" target="_blank">Instagram</a>
-                <a href="https://www.linkedin.com/company/fontejr/mycompany/" target="_blank">LinkedIn</a>
-                <a href="https://www.facebook.com/fontejunior/" target="_blank">Facebook</a>
-            </div>
+        <div class="footer-logo">
+            <img src="Imagens/Cópia de Logo Completa (1).png" alt="Logo Fonte Jr.">
         </div>
-    </div>
-    <!-- Fim Contato (Bernardo) -->
+    </footer>
+    <!-- Fim Contato -->
 </body>
 
 </html>
