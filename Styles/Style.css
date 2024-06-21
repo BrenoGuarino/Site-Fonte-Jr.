@@ -1,28 +1,64 @@
-*{
-  margin: 0px;
-  padding: 0px;
+/* Global reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
-  
+/* Styling the body */
+body {
+  overflow-x: hidden;
+  font-family: 'OpenSansRegular', Arial, sans-serif;
+  background-color: #fff;
+
+}
+
+/* Styling the header */
+header {
   height: 80px;
-  
 }
 
+/* Styling the fixed header */
 #cabecalho {
   position: fixed;
-  width: 1300px;
+  width: 100%;
   background-color: #021E30;
   height: 80px;
-  padding: 20px;
-  padding-right: 40px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding: 5px 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 30px;
-  font-family: 'Times New Roman', Times, serif;
   color: white;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+/* Styling the logo */
+.logo img {
+  height: 70px;
+}
+
+/* Styling the navigation menu */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 200ms;
+}
+
+nav ul li a:hover {
+  color: #fa8200;
 }
 
 .logo {
@@ -60,17 +96,15 @@ li :hover {
 
 #Apresentacao {
   height: 500px;
-  padding:0px;
-  padding-top:0px;
-  margin-top: 0px;
+
 
   h1 {
     width: 600px;
     height: 400px;
     font-size: 58px;
-    text-align:start;
+    text-align: start;
     padding-left: 30px;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     text-shadow: 2px 2px rgba(16, 16, 13, 0.700);
     text-decoration: solid;
     font-family: "OpenSansRegular";
@@ -101,18 +135,17 @@ li :hover {
   /* width:98.86vw; */
   width: 100%;
   background-image: url(../Imagens/Banner\ do\ site.png);
-  background-size:cover;
+  background-size: cover;
   background-position: center;
-  background-position-y: center;
   background-repeat: no-repeat;
 
 }
 
 #spaceText {
-  height: 400px;
-  width: 600px;
-  padding-top: 8vh;
-  padding-bottom: 0vh;
+  height: 100%;
+  width: 100%;
+  padding-top: 10vh;
+  padding-bottom: 50vh;
   /* padding-left: 10px; */
   /* padding-right: 16px; */
   margin-left: 52vw;
@@ -133,7 +166,8 @@ li :hover {
 /* Início Serviços (Bernardo) */
 
 .servicos {
-  display: flex;
+  padding: 20px;
+  background-color: white;
 }
 
 .div-servicos {
@@ -143,19 +177,47 @@ li :hover {
 }
 
 .div-titulo-servicos {
-  font-size: 30px;
+  color: #007bff;
+  /* Blue color for title */
   text-align: center;
-  font-weight: bold;
-  margin: 4vh;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 .div-conteudo-servicos {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: 20px;
 }
 
+.servico {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.servico img {
+  width: 150px;
+  /* Smaller size for images */
+  height: auto;
+  margin-right: 20px;
+}
+
+.servico h2 {
+  font-size: 24px;
+  color: #007bff;
+  /* Blue color for service titles */
+  margin-bottom: 10px;
+}
+
+.servico p {
+  font-size: 18px;
+  text-align: justify;
+  color: black;
+}
 
 .linha-1-servicos,
 .linha-2-servicos {
@@ -181,7 +243,7 @@ li :hover {
   transition: 500ms;
 }
 
-.imgServ{
+.imgServ {
   width: 50%;
   margin-bottom: 5vh;
 }
@@ -191,6 +253,18 @@ li :hover {
   font-size: 20px;
   text-indent: 15px;
   text-align: justify;
+}
+
+/* Estilizando o link para a página de serviços */
+.link-servicos {
+  font-size: 24px;
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 200ms;
+}
+
+.link-servicos:hover {
+  color: #0056b3;
 }
 
 
@@ -249,51 +323,185 @@ li :hover {
 
 /* Início Contatos (Bernardo) */
 
-.contato {
-  display: flex;
-  padding-bottom: 10vh;
-  padding-top: 10vh;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #021E30;
-  
+/* Estilos específicos para o formulário de contato */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #001f3f;
+  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
-.div-titulo-contato {
-  margin-bottom: 5vh;
+.services-section {
+  background-color: white;
+  color: #000;
+  text-align: center;
+  padding: 20px;
 }
 
-.div-titulo-contato>h1{
-  font-size: 40px;
+.services-section h2 {
+  font-size: 36px;
+}
+
+.services-link {
   color: white;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-.div-conteudo-contato {
- display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10vh;
+.services-link:hover {
+  text-decoration: underline;
 }
 
-.div-contato-redes-sociais {
+
+.contact-section {
+  background-color: #001f3f;
+  padding: 50px;
+  color: #fff;
+}
+
+.contact-header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.contact-header h2 {
+  font-size: 36px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  flex: 1 1 40%;
+  margin-right: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-info {
+  flex: 1 1 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-info .map {
+  margin-right: 20px;
+}
+
+.contact-info .map iframe {
+  width: 500px;
+  height: 208px;
+  padding-left: 171px;
+  padding-top: 18px;
+  border: none;
+}
+
+.contact-info .social-media {
   display: flex;
   flex-direction: column;
   gap: 5vh;
-
 }
 
-.div-contato-redes-sociais>a {
-  padding: 10px;
-  background-color: #00abe3;
-  text-decoration: none;
-  color: black;
-  transition: all 300ms;
+.contact-info .social-media a {
+  display: inline-block;
+  padding: 0;
 }
 
-.div-contato-redes-sociais>a:hover {
-  background-color: #86c5da;
+.contact-info .social-media a img {
+  width: 50px;
+  height: auto;
+}
+
+.contact-info .social-media a:hover {
   transition: 300ms;
 }
 
-/* Fim Contatos (Bernardo) */
+
+.footer-logo {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 30px;
+
+}
+
+.footer-logo img {
+  max-width: 75px;
+}
+
+.rodape {
+  background-color: #001f3f;
+  padding: 50px;
+  color: #fff;
+}
+
+.footer-servicos {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.footer-servicos img {
+  max-width: 75px;
+}
+
+button {
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+  border-radius: 20px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+}
+
+button:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 #05bada66;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+
+}
