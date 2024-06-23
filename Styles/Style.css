@@ -1,19 +1,10 @@
 /* Global reset for margin and padding */
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-/* Styling the body */
-body {
-  overflow-x: hidden;
-  font-family: 'OpenSansRegular', Arial, sans-serif;
-  background-color: #fff;
-
-}
-
-/* Styling the header */
 header {
   height: 80px;
 }
@@ -79,12 +70,10 @@ li {
   font-family: "OpenSansRegular";
 }
 
-li :hover {
+li:hover {
   color: #fa8200;
   transition: 200ms;
 }
-
-
 
 .logo img,
 .div-conteudo-contato>div>img {
