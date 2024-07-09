@@ -1,497 +1,511 @@
 /* Global reset for margin and padding */
+@media screen and (min-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
-* {
-  margin: 0;
-  padding: 0;
-}
+  header {
+    height: 80px;
+  }
 
-header {
-  height: 80px;
-}
+  /* Styling the fixed header */
+  #cabecalho {
+    position: fixed;
+    width: 100%;
+    background-color: #021E30;
+    height: 80px;
+    padding: 5px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    box-sizing: border-box;
+    z-index: 1000;
+  }
 
-/* Styling the fixed header */
-#cabecalho {
-  position: fixed;
-  width: 100%;
-  background-color: #021E30;
-  height: 80px;
-  padding: 5px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 30px;
-  color: white;
-  box-sizing: border-box;
-  z-index: 1000;
-}
+  /* Styling the logo */
+  .logo img {
+    height: 70px;
+  }
 
-/* Styling the logo */
-.logo img {
-  height: 70px;
-}
+  /* Styling the navigation menu */
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
 
-/* Styling the navigation menu */
-nav ul {
-  display: flex;
-  list-style: none;
-}
+  nav ul li {
+    margin: 0 15px;
+    font-size: 20px;
+    line-height: 50px;
+    width: fit-content;
+  }
 
-nav ul li {
-  margin: 0 15px;
-  font-size: 20px;
-  line-height: 50px;
-  width: fit-content;
-}
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 200ms;
+  }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  transition: color 200ms;
-}
+  nav ul li a:hover {
+    color: #fa8200;
+  }
 
-nav ul li a:hover {
-  color: #fa8200;
-}
+  .logo {
+    padding-bottom: 20px;
+    height: 20px;
+  }
 
-.logo {
-  padding-bottom: 20px;
-  height: 20px;
-}
-
-li {
-  display: inline-block;
-  margin: 0px;
-  font-size: 20px;
-  height: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-right: 15px;
-  color: inherit;
-  color: white;
-  font-family: "OpenSansRegular";
-}
-
-li:hover {
-  color: #fa8200;
-  transition: 200ms;
-}
-
-.logo img,
-.div-conteudo-contato>div>img {
-  max-width: 1300px;
-  height: 80px;
-}
-
-/*Inicio Pedro*/
-
-#Apresentacao {
-  height: 500px;
-
-
-  h1 {
-    width: 600px;
-    height: 400px;
-    font-size: 58px;
-    text-align: start;
-    padding-left: 30px;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px rgba(16, 16, 13, 0.700);
-    text-decoration: solid;
+  li {
+    display: inline-block;
+    margin: 0px;
+    font-size: 20px;
+    height: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    color: inherit;
+    color: white;
     font-family: "OpenSansRegular";
   }
 
-  /*p {
+  li:hover {
+    color: #fa8200;
+    transition: 200ms;
+  }
+
+  .logo img,
+  .div-conteudo-contato>div>img {
+    max-width: 1300px;
+    height: 80px;
+  }
+
+  /*Inicio Pedro*/
+
+  #Apresentacao {
+    height: 500px;
+
+
+    h1 {
+      width: 600px;
+      height: 400px;
+      font-size: 58px;
+      text-align: start;
+      padding-left: 30px;
+      color: rgb(255, 255, 255);
+      text-shadow: 2px 2px rgba(16, 16, 13, 0.700);
+      text-decoration: solid;
+      font-family: "OpenSansRegular";
+    }
+
+    /*p {
+      font-size: 36px;
+      margin-left: 40px;
+      margin-right: 40px;
+      width: 1hw;
+      text-align: justify;
+      text-indent: 36px;
+    }*/
+
+    /*img {
+      filter: blur(8px);
+      max-height: 400px;
+      position: relative;
+      max-width: 1080px;
+      margin: auto;
+      display: block;
+
+    }*/
+
+  }
+
+  .divApresenta {
+    /* width:98.86vw; */
+    width: 100%;
+    background-image: url(../Imagens/Banner\ do\ site.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  #spaceText {
+    height: 100%;
+    width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 50vh;
+    /* padding-left: 10px; */
+    /* padding-right: 16px; */
+    margin-left: 52vw;
+    /* margin-right: 30px; */
+  }
+
+  /*#imgApresenta {
+    width: 1600px;
+    height: 400px;
+  }
+
+  .textDivApresenta {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }*/
+
+  /* Início Serviços (Bernardo) */
+
+  .servicos {
+    padding: 20px;
+    background-color: white;
+  }
+
+  .div-servicos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .div-titulo-servicos {
+    color: #007bff;
+    /* Blue color for title */
+    text-align: center;
     font-size: 36px;
-    margin-left: 40px;
-    margin-right: 40px;
-    width: 1hw;
+    margin-bottom: 20px;
+  }
+
+  .div-conteudo-servicos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .servico {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .servico img {
+    width: 150px;
+    /* Smaller size for images */
+    height: auto;
+    margin-right: 20px;
+  }
+
+  .servico h2 {
+    font-size: 24px;
+    color: #007bff;
+    /* Blue color for service titles */
+    margin-bottom: 10px;
+  }
+
+  .servico p {
+    font-size: 18px;
     text-align: justify;
-    text-indent: 36px;
-  }*/
+    color: black;
+  }
 
-  /*img {
-    filter: blur(8px);
-    max-height: 400px;
-    position: relative;
-    max-width: 1080px;
+  .linha-1-servicos,
+  .linha-2-servicos {
+    display: flex;
+    gap: 10em;
+    margin: 3em;
+  }
+
+  .linha-1-servicos>div,
+  .linha-2-servicos>div {
+    width: 60%;
+    text-align: center;
+    padding: 1.5em;
+    border: 0.5px solid #CACACA;
+    border-radius: 1em;
+    transition: all 500ms;
+  }
+
+  .linha-1-servicos>div:hover,
+  .linha-2-servicos>div:hover {
+    padding: 2em;
+    border: 0.5px solid #fa8200;
+    transition: 500ms;
+  }
+
+  .imgServ {
+    width: 50%;
+    margin-bottom: 5vh;
+  }
+
+  .linha-1-servicos>div>p,
+  .linha-2-servicos>div>p {
+    font-size: 20px;
+    text-indent: 15px;
+    text-align: justify;
+  }
+
+  /* Estilizando o link para a página de serviços */
+  .link-servicos {
+    font-size: 24px;
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 200ms;
+  }
+
+  .link-servicos:hover {
+    color: #0056b3;
+  }
+
+
+  /* Fim Serviços (Bernardo) */
+
+  /*.carrossel1, .carrossel2, .carrossel3 {
+      margin-top: 15px;
+    max-width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    display: block;
+
+    img {
+      margin-bottom: 15px;
+      width: 200px;
+      max-width: 200px;
 
   }*/
 
-}
 
-.divApresenta {
-  /* width:98.86vw; */
-  width: 100%;
-  background-image: url(../Imagens/Banner\ do\ site.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-}
-
-#spaceText {
-  height: 100%;
-  width: 100%;
-  padding-top: 10vh;
-  padding-bottom: 50vh;
-  /* padding-left: 10px; */
-  /* padding-right: 16px; */
-  margin-left: 52vw;
-  /* margin-right: 30px; */
-}
-
-/*#imgApresenta {
-  width: 1600px;
-  height: 400px;
-}
-
-.textDivApresenta {
-  position: absolute;
-  top: 0;
-  left: 0;
-}*/
-
-/* Início Serviços (Bernardo) */
-
-.servicos {
-  padding: 20px;
-  background-color: white;
-}
-
-.div-servicos {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.div-titulo-servicos {
-  color: #007bff;
-  /* Blue color for title */
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.div-conteudo-servicos {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.servico {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.servico img {
-  width: 150px;
-  /* Smaller size for images */
-  height: auto;
-  margin-right: 20px;
-}
-
-.servico h2 {
-  font-size: 24px;
-  color: #007bff;
-  /* Blue color for service titles */
-  margin-bottom: 10px;
-}
-
-.servico p {
-  font-size: 18px;
-  text-align: justify;
-  color: black;
-}
-
-.linha-1-servicos,
-.linha-2-servicos {
-  display: flex;
-  gap: 10em;
-  margin: 3em;
-}
-
-.linha-1-servicos>div,
-.linha-2-servicos>div {
-  width: 60%;
-  text-align: center;
-  padding: 1.5em;
-  border: 0.5px solid #CACACA;
-  border-radius: 1em;
-  transition: all 500ms;
-}
-
-.linha-1-servicos>div:hover,
-.linha-2-servicos>div:hover {
-  padding: 2em;
-  border: 0.5px solid #fa8200;
-  transition: 500ms;
-}
-
-.imgServ {
-  width: 50%;
-  margin-bottom: 5vh;
-}
-
-.linha-1-servicos>div>p,
-.linha-2-servicos>div>p {
-  font-size: 20px;
-  text-indent: 15px;
-  text-align: justify;
-}
-
-/* Estilizando o link para a página de serviços */
-.link-servicos {
-  font-size: 24px;
-  color: #007BFF;
-  text-decoration: none;
-  transition: color 200ms;
-}
-
-.link-servicos:hover {
-  color: #0056b3;
-}
-
-
-/* Fim Serviços (Bernardo) */
-
-/*.carrossel1, .carrossel2, .carrossel3 {
-    margin-top: 15px;
-  max-width: 600px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-
-  img {
-    margin-bottom: 15px;
-    width: 200px;
-    max-width: 200px;
-
-}*/
-
-
-/* Position the "next button" to the right */
-/*.antCliente,
-.proxCliente {
-  cursor: pointer;
-  position: absolute;
-  width: auto;
-  padding: 16px;
-  margin-top: 170px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.1);
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.proxCliente {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.antCliente:hover,
-.proxCliente:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-#Clientes {
-  display: flex;
-  flex-direction: row;
-}*/
-
-/*Fim Pedro*/
-
-/* Início Contatos (Bernardo) */
-
-/* Estilos específicos para o formulário de contato */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #001f3f;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-}
-
-.services-section {
-  background-color: white;
-  color: #000;
-  text-align: center;
-  padding: 20px;
-}
-
-.services-section h2 {
-  font-size: 36px;
-}
-
-.services-link {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.services-link:hover {
-  text-decoration: underline;
-}
-
-
-.contact-section {
-  background-color: #001f3f;
-  padding: 50px;
-  color: #fff;
-}
-
-.contact-header {
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.contact-header h2 {
-  font-size: 36px;
-}
-
-.contact-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contact-form {
-  flex: 1 1 40%;
-  margin-right: 20px;
-}
-
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form label {
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-}
-
-.contact-form button {
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.contact-info {
-  flex: 1 1 55%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.contact-info .map {
-  margin-right: 20px;
-}
-
-.contact-info .map iframe {
-  width: 500px;
-  height: 208px;
-  padding-left: 171px;
-  padding-top: 18px;
-  border: none;
-}
-
-.contact-info .social-media {
-  display: flex;
-  flex-direction: column;
-  gap: 5vh;
-}
-
-.contact-info .social-media a {
-  display: inline-block;
-  padding: 0;
-}
-
-.contact-info .social-media a img {
-  width: 50px;
-  height: auto;
-}
-
-.contact-info .social-media a:hover {
-  transition: 300ms;
-}
-
-
-.footer-logo {
-  text-align: center;
-  margin-top: 20px;
-  padding-top: 30px;
-
-}
-
-.footer-logo img {
-  max-width: 75px;
-}
-
-.rodape {
-  background-color: #001f3f;
-  padding: 50px;
-  color: #fff;
-}
-
-.footer-servicos {
-  text-align: center;
-  padding-top: 20px;
-}
-
-.footer-servicos img {
-  max-width: 75px;
-}
-
-button {
-  border: none;
-  color: #fff;
-  background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
-  border-radius: 20px;
-  background-size: 100% auto;
-  font-family: inherit;
-  font-size: 17px;
-  padding: 0.6em 1.5em;
-}
-
-button:hover {
-  background-position: right center;
-  background-size: 200% auto;
-  -webkit-animation: pulse 2s infinite;
-  animation: pulse512 1.5s infinite;
-}
-
-@keyframes pulse512 {
-  0% {
-    box-shadow: 0 0 0 0 #05bada66;
+  /* Position the "next button" to the right */
+  /*.antCliente,
+  .proxCliente {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 16px;
+    margin-top: 170px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
   }
 
-  70% {
-    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  .proxCliente {
+    right: 0;
+    border-radius: 3px 0 0 3px;
   }
 
-  100% {
-    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  .antCliente:hover,
+  .proxCliente:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
+  #Clientes {
+    display: flex;
+    flex-direction: row;
+  }*/
+
+  /*Fim Pedro*/
+
+  /* Início Contatos (Bernardo) */
+
+  /* Estilos específicos para o formulário de contato */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #001f3f;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .services-section {
+    background-color: white;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .services-section h2 {
+    font-size: 36px;
+  }
+
+  .services-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .services-link:hover {
+    text-decoration: underline;
+  }
+
+
+  .contact-section {
+    background-color: #001f3f;
+    padding: 50px;
+    color: #fff;
+  }
+
+  .contact-header {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .contact-header h2 {
+    font-size: 36px;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .contact-form {
+    flex: 1 1 40%;
+    margin-right: 20px;
+  }
+
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .contact-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .contact-info {
+    flex: 1 1 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .contact-info .map {
+    margin-right: 20px;
+  }
+
+  .contact-info .map iframe {
+    width: 500px;
+    height: 208px;
+    padding-left: 171px;
+    padding-top: 18px;
+    border: none;
+  }
+
+  .contact-info .social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+  .contact-info .social-media a {
+    display: inline-block;
+    padding: 0;
+  }
+
+  .contact-info .social-media a img {
+    width: 50px;
+    height: auto;
+  }
+
+  .contact-info .social-media a:hover {
+    transition: 300ms;
+  }
+
+
+  .footer-logo {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 30px;
+
+  }
+
+  .footer-logo img {
+    max-width: 75px;
+  }
+
+  .rodape {
+    background-color: #001f3f;
+    padding: 50px;
+    color: #fff;
+  }
+
+  .footer-servicos {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .footer-servicos img {
+    max-width: 75px;
+  }
+
+  button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+  }
+
+  button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+  }
+
+  #whatsapp {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: calc(100vw - 125px);
+    margin-top: 75vh;
+  }
+  #wppBtn{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    position: fixed;
+  }
+
+  @keyframes pulse512 {
+    0% {
+      box-shadow: 0 0 0 0 #05bada66;
+    }
+
+    70% {
+      box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+      box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+  }
 }

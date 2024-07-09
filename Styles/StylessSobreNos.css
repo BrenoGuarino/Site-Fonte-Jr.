@@ -378,3 +378,17 @@ div img {
     width: 100%;
     height: auto;
 }
+
+#whatsapp {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: calc(100vw - 80px);
+    margin-top: 10vh;
+  }
+  #wppBtn{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    position: fixed;
+  }
