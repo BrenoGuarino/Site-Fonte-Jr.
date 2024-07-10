@@ -483,15 +483,16 @@
 
   #whatsapp {
     height: 60px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: calc(100vw - 125px);
+    display: inline-block;
     margin-top: 75vh;
+    margin-left: calc(100vw - 120px);
+    
+    
   }
   #wppBtn{
     width: 60px;
     height: 60px;
-    display: flex;
+    display: inline-block;
     position: fixed;
   }
 

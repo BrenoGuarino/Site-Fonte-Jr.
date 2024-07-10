@@ -1,5 +1,5 @@
-@media screen and (min-width: 1024px) {
-    /* Global reset for margin and padding */
+@media screen and (max-width: 480px) {
+    /* Resetting margin and padding for all elements */
     * {
         margin: 0;
         padding: 0;
@@ -14,20 +14,20 @@
     }
 
     header {
-        height: 80px;
+        height: 60px;
     }
 
     /* Styling the fixed header */
     #cabecalho {
-        position: fixed;
         width: 100%;
         background-color: #021E30;
         height: 80px;
-        padding: 5px 40px;
+        padding: 5px 20px;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        font-size: 30px;
+        font-size: 20px;
         color: white;
         box-sizing: border-box;
         z-index: 1000;
@@ -35,76 +35,49 @@
 
     /* Styling the logo */
     .logo img {
-        height: 70px;
+        height: 50px;
+        display: inline-block;
+        margin-bottom: 30px;
     }
 
     /* Styling the navigation menu */
     nav ul {
-        display: flex;
-        list-style: none;
-    }
-
-    nav ul li {
-        margin: 0 15px;
-        font-size: 20px;
-        line-height: 50px;
+        display: none; /* Hiding the navigation menu */
     }
 
     nav ul li a {
         color: white;
         text-decoration: none;
         transition: color 200ms;
-    }
-
-    nav ul li a:hover {
-        color: #fa8200;
-    }
-
-    .logo {
-        padding-bottom: 20px;
-        height: 20px;
-    }
+        font-family: 'Roboto';
+      }
 
     li {
-        display: inline-block;
+        display: flex;
+        width: fit-content;
         margin: 0;
         font-size: 20px;
         height: 20px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-right: 15px;
-        color: inherit;
+        margin-bottom: 20px;
         color: white;
-        font-family: "OpenSansRegular";
-    }
 
-    li:hover {
-        color: #fa8200;
-        transition: 200ms;
-    }
+      }
 
-    .logo img,
-    .div-conteudo-contato>div>img {
-        max-width: 1300px;
-        height: 80px;
-    }
 
-    body, html {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        font-family: "OpenSansRegular", sans-serif;
+    .logo {
+        height: 20px;
+        display: inline-block;
     }
 
     .about-text {
+        margin-top: 190px;
         width: 100%;
-        font-size: 24px;
+        font-size: 18px;
         text-align: center;
         color: rgb(255, 255, 255);
         text-shadow: 2px 2px rgba(16, 16, 13, 0.7);
         background-color: #fa8200;
-        padding: 20px;
+        padding: 10px;
         border-radius: 0;
     }
 
@@ -116,31 +89,30 @@
 
     .values-section {
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
         align-items: center;
         background-size: cover;
         background-position: center;
-        padding: 40px 0;
-        flex-wrap: wrap;
+        padding: 20px 0;
         width: 100%;
-        background-color: #001f3f;
+        background-color: #021E30;
     }
 
     .value-block {
         background-color: #fa8200;
         color: white;
-        padding: 20px;
-        width: 28%;
+        padding: 15px;
+        width: 80%;
         text-align: center;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        margin: 10px;
-        font-size: 20px;
+        margin: 10px 0;
+        font-size: 16px;
     }
 
     .value-block h2 {
         margin-top: 0;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     body {
@@ -155,17 +127,17 @@
         background-color: white;
         color: #000;
         text-align: center;
-        padding: 20px;
+        padding: 10px;
     }
 
     .services-section h2 {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .services-link {
         color: white;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .services-link:hover {
@@ -174,28 +146,26 @@
 
     .contact-section {
         background-color: #001f3f;
-        padding: 50px;
+        padding: 30px;
         color: #fff;
     }
 
     .contact-header {
         text-align: left;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .contact-header h2 {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .contact-content {
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .contact-form {
-        flex: 1 1 40%;
-        margin-right: 20px;
+        margin-bottom: 20px;
     }
 
     .contact-form form {
@@ -226,67 +196,53 @@
     }
 
     .contact-info {
-        flex: 1 1 55%;
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .contact-info .map {
-        margin-right: 20px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .contact-info .map iframe {
-        width: 500px;
-        height: 208px;
-        padding-left: 171px;
-        padding-top: 18px;
+        width: 100%;
+        height: 200px;
         border: none;
     }
 
     .contact-info .social-media {
         display: flex;
-        flex-direction: column;
-        gap: 5vh;
-    }
-
-    .contact-info .social-media a {
-        display: inline-block;
-        padding: 0;
+        flex-direction: row;
+        gap: 20px;
     }
 
     .contact-info .social-media a img {
-        width: 50px;
+        display: inline-block;
+        margin-top: 20px;
+        width: 40px;
         height: auto;
     }
 
-    .contact-info .social-media a:hover {
-        transition: 300ms;
-    }
-
     .footer-logo {
         text-align: center;
-        margin-top: 20px;
-        padding-top: 30px;
+        margin-top: 10px;
+        padding-top: 20px;
     }
 
     .footer-logo img {
-        max-width: 75px;
+        max-width: 50px;
     }
 
     .rodape {
         background-color: #001f3f;
-        padding: 50px;
+        padding: 30px;
         color: #fff;
     }
 
     .footer-servicos {
         text-align: center;
-        padding-top: 20px;
+        padding-top: 10px;
     }
 
     .footer-servicos img {
-        max-width: 75px;
+        max-width: 50px;
     }
 
     button {
@@ -296,70 +252,8 @@
         border-radius: 20px;
         background-size: 100% auto;
         font-family: inherit;
-        font-size: 17px;
-        padding: 0.6em 1.5em;
-    }
-
-    button:hover {
-        background-position: right center;
-        background-size: 200% auto;
-        -webkit-animation: pulse 2s infinite;
-        animation: pulse512 1.5s infinite;
-    }
-
-    @keyframes pulse512 {
-        0% {
-            box-shadow: 0 0 0 0 #05bada66;
-        }
-        70% {
-            box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
-        }
-        100% {
-            box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
-        }
-    }
-
-    .footer-logo {
-        text-align: center;
-        margin-top: 20px;
-        padding-top: 30px;
-    }
-
-    .footer-logo img {
-        max-width: 75px;
-    }
-
-    .rodape {
-        background-color: #001f3f;
-        padding: 50px;
-        color: #fff;
-    }
-
-    .footer-servicos {
-        text-align: center;
-        padding-top: 20px;
-    }
-
-    .footer-servicos img {
-        max-width: 75px;
-    }
-
-    button {
-        border: none;
-        color: #fff;
-        background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
-        border-radius: 20px;
-        background-size: 100% auto;
-        font-family: inherit;
-        font-size: 17px;
-        padding: 0.6em 1.5em;
-    }
-
-    button:hover {
-        background-position: right center;
-        background-size: 200% auto;
-        -webkit-animation: pulse 2s infinite;
-        animation: pulse512 1.5s infinite;
+        font-size: 15px;
+        padding: 0.5em 1.2em;
     }
 
     @keyframes pulse512 {
@@ -381,15 +275,16 @@
     }
 
     #whatsapp {
-        height: 60px;
+        height: 50px;
         display: inline-block;
         justify-content: space-between;
-        margin-left: calc(100vw - 80px);
-        margin-top: 10vh;
+        margin-left: calc(100vw - 60px);
+        margin-top: 5vh;
     }
-    #wppBtn{
-        width: 60px;
-        height: 60px;
+
+    #wppBtn {
+        width: 50px;
+        height: 50px;
         display: inline-block;
         position: fixed;
     }
