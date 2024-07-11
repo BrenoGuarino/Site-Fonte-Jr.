@@ -6,6 +6,9 @@
         box-sizing: border-box;
     }
 
+    a{
+        text-decoration: none;
+    }
     /* Styling the body */
     body {
         overflow-x: hidden;
@@ -31,6 +34,7 @@
         color: white;
         box-sizing: border-box;
         z-index: 1000;
+        text-decoration: none;
     }
 
     /* Styling the logo */
@@ -40,16 +44,13 @@
         margin-bottom: 30px;
     }
 
-    /* Styling the navigation menu */
-    nav ul {
-        display: none; /* Hiding the navigation menu */
-    }
+   
 
     nav ul li a {
         color: white;
         text-decoration: none;
         transition: color 200ms;
-        font-family: 'Roboto';
+        font-family: "Roboto";
       }
 
     li {
@@ -60,7 +61,8 @@
         height: 20px;
         margin-bottom: 20px;
         color: white;
-
+        font-family: "Roboto";
+        text-decoration: none;
       }
 
 
@@ -95,7 +97,7 @@
         background-position: center;
         padding: 20px 0;
         width: 100%;
-        background-color: #021E30;
+        background-color: #001f3f;
     }
 
     .value-block {

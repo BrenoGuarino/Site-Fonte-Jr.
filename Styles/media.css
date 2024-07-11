@@ -3,6 +3,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box; /* Adicionado para incluir padding e bordas dentro da largura e altura do elemento */
+      text-decoration: none;
     }
   
     html {
@@ -62,7 +63,7 @@
       color: white;
       text-decoration: none;
       transition: color 200ms;
-      font-family: 'Roboto';
+      font-family: "Roboto";
     }
   
     .logo {
@@ -77,6 +78,7 @@
       height: 20px;
       margin-bottom: 30px;
       color: white;
+      font-family: "Roboto";
     }
   
     .logo img,
