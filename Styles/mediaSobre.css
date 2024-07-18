@@ -12,7 +12,7 @@
     /* Styling the body */
     body {
         overflow-x: hidden;
-        font-family: 'OpenSansRegular', Arial, sans-serif;
+        font-family: OpenSansRegular;
         background-color: #fff;
     }
 
@@ -50,7 +50,7 @@
         color: white;
         text-decoration: none;
         transition: color 200ms;
-        font-family: "Roboto";
+        font-family: OpenSansRegular
       }
 
     li {
@@ -61,7 +61,7 @@
         height: 20px;
         margin-bottom: 20px;
         color: white;
-        font-family: "Roboto";
+        font-family: OpenSansRegular;
         text-decoration: none;
       }
 
@@ -77,7 +77,6 @@
         font-size: 18px;
         text-align: center;
         color: rgb(255, 255, 255);
-        text-shadow: 2px 2px rgba(16, 16, 13, 0.7);
         background-color: #fa8200;
         padding: 10px;
         border-radius: 0;
@@ -118,7 +117,7 @@
     }
 
     body {
-        font-family: Arial, sans-serif;
+        font-family: OpenSansRegular;
         background-color: #001f3f;
         color: #fff;
         margin: 0;
@@ -173,6 +172,7 @@
     .contact-form form {
         display: flex;
         flex-direction: column;
+        font-family: OpenSansRegular;
     }
 
     .contact-form label {

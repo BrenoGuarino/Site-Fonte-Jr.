@@ -9,7 +9,7 @@
     /* Styling the body */
     body {
         overflow-x: hidden;
-        font-family: 'OpenSansRegular', Arial, sans-serif;
+        font-family: OpenSansRegular;
         background-color: #fff;
     }
 
@@ -75,7 +75,7 @@
         margin-right: 15px;
         color: inherit;
         color: white;
-        font-family: "OpenSansRegular";
+        font-family: OpenSansRegular;
     }
 
     li:hover {
@@ -94,7 +94,7 @@
         padding: 0;
         width: 100%;
         height: 100%;
-        font-family: "OpenSansRegular", sans-serif;
+        font-family: OpenSansRegular;
     }
 
     .about-text {
@@ -102,10 +102,10 @@
         font-size: 24px;
         text-align: center;
         color: rgb(255, 255, 255);
-        text-shadow: 2px 2px rgba(16, 16, 13, 0.7);
         background-color: #fa8200;
         padding: 20px;
         border-radius: 0;
+        font-family: OpenSansRegular;
     }
 
     main {
@@ -144,7 +144,7 @@
     }
 
     body {
-        font-family: Arial, sans-serif;
+        font-family: OpenSansRegular;
         background-color: #001f3f;
         color: #fff;
         margin: 0;

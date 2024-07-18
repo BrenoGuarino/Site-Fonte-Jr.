@@ -68,7 +68,7 @@
     margin-right: 15px;
     color: inherit;
     color: white;
-    font-family: "OpenSansRegular";
+    font-family: OpenSansRegular;
   }
 
   li:hover {
@@ -88,7 +88,7 @@
     height: 500px;
 
 
-    h1 {
+   /*h1 {
       width: 600px;
       height: 400px;
       font-size: 58px;
@@ -98,7 +98,7 @@
       text-shadow: 2px 2px rgba(16, 16, 13, 0.700);
       text-decoration: solid;
       font-family: "OpenSansRegular";
-    }
+    }*/
 
     /*p {
       font-size: 36px;
@@ -124,7 +124,7 @@
   .divApresenta {
     /* width:98.86vw; */
     width: 100%;
-    background-image: url(../Imagens/Banner\ do\ site.png);
+    background-image: url(../Imagens/banner\ definitivo.png );
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -154,10 +154,23 @@
   }*/
 
   /* Início Serviços (Bernardo) */
-
+  .text-section{
+    background-color: #050a30;
+    height: 250px;
+    font-size: 40px;
+    color: #FFF7F5;
+    font-weight: bold;
+  }
+  .text-section p{
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+  .text-section span{
+    color:#fa8200;
+  }
   .servicos {
     padding: 20px;
-    background-color: white;
+    background-color: #D9D9D9;
   }
 
   .div-servicos {
@@ -167,7 +180,7 @@
   }
 
   .div-titulo-servicos {
-    color: #007bff;
+    color: #050a30;
     /* Blue color for title */
     text-align: center;
     font-size: 36px;
@@ -184,7 +197,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 1px solid #ccc;
+    border: 1px solid #abababde;
     padding: 20px;
     border-radius: 8px;
   }
@@ -198,10 +211,11 @@
 
   .servico h2 {
     font-size: 24px;
-    color: #007bff;
+    color: #050a30;
     /* Blue color for service titles */
     margin-bottom: 10px;
   }
+
 
   .servico p {
     font-size: 18px;
@@ -315,22 +329,32 @@
 
   /* Estilos específicos para o formulário de contato */
   body {
-    font-family: Arial, sans-serif;
+    font-family: OpenSansRegular;
     background-color: #001f3f;
-    color: #fff;
+    color: #FFF7F5;
     margin: 0;
     padding: 0;
   }
 
   .services-section {
-    background-color: white;
-    color: #000;
+    background-color: #D9D9D9;
+    height: 350px;
+    color: #050a30;
     text-align: center;
     padding: 20px;
   }
 
   .services-section h2 {
-    font-size: 36px;
+    margin-top: 60px;
+    font-size: 38px;
+    margin-bottom: 15px;
+    font-family: OpenSansRegular;
+  }
+
+  .services-section p {
+    font-size: 27px;
+    font-family: OpenSansRegular;
+    margin-bottom: 25px;
   }
 
   .services-link {

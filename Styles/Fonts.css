@@ -1,14 +1,18 @@
 @font-face {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     src: url(Fontes\Roboto-Regular.ttf);
 }
 
 @font-face {
-    font-family: "OpenSansRegular";
-    src: url(Fontes\open-sans.regular.ttf);
+    font-family: 'OpenSansRegular';
+    src: url('..Fontes/OpenSans-Regular.woff2') format('woff2'),
+    url('../Fontes/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: "OpenSansItalic";
+    font-family: 'OpenSansItalic';
     src: url(Fontes\open-sans.italic.ttf);
 }

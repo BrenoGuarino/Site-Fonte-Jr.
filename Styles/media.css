@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1023px) {
     * {
       margin: 0;
       padding: 0;
@@ -11,7 +11,7 @@
     }
   
     body {
-      font-family: Arial, sans-serif;
+      font-family: OpenSansRegular;
       background-color: #001f3f;
       color: #fff;
       margin: 0;
@@ -63,7 +63,7 @@
       color: white;
       text-decoration: none;
       transition: color 200ms;
-      font-family: "Roboto";
+      font-family: OpenSansRegular;
     }
   
     .logo {
@@ -78,7 +78,7 @@
       height: 20px;
       margin-bottom: 30px;
       color: white;
-      font-family: "Roboto";
+      font-family: OpenSansRegular;
     }
   
     .logo img,
@@ -90,8 +90,8 @@
     #Apresentacao {
       height: fit-content;
       width: 100%; /* Ajuste a largura para 100% */
-      h1 {
-        width: 100%; /* Ajuste a altura para auto */
+      /*h1 {
+        width: 100%; /* Ajuste a altura para auto 
         justify-content: center;
         text-align: left;
         font-size: 30px;
@@ -100,12 +100,28 @@
         padding: 30px;
         color: rgb(255, 255, 255);
         text-shadow: 2px 2px rgba(16, 16, 13, 0.700);
-        font-family: "OpenSansRegular";
-      }
+        font-family: OpenSansRegular;
+      }*/
     }
     .divApresenta {
       width: 100%;
       
+    }
+
+    .text-section{
+      margin-top: 200px;
+      background-color: #050a30;
+      height: 250px;
+      font-size: 20px;
+      color: #FFF7F5;
+      font-weight: bold;
+    }
+    .text-section p{
+      padding-left: 40px;
+      padding-top: 40px;
+    }
+    .text-section span{
+      color:#fa8200;
     }
   
     #spaceText {
@@ -115,8 +131,8 @@
     }
 
     .services-section {
-        background-color: white;
-        color: #000;
+        background-color: #d9d9d9;
+        color: #050a30;
         text-align: center;
         padding: 20px;
     }
@@ -124,6 +140,10 @@
     .services-section h2 {
         font-size: 36px;
     }
+
+    .services-section p {
+      margin-bottom: 10px
+  }
     
     .services-link {
         color: white;
@@ -132,8 +152,8 @@
     }
     .servicos {
       padding: 20px;
-      background-color: white;
-      color: black;
+      background-color: #d9d9d9;
+      color: #050a30;
     }
   
     .div-servicos {
@@ -144,9 +164,8 @@
   
     .div-titulo-servicos {
       margin-top: 180px;
-      color: #007bff;
-      text-align: center;
-      font-size: 36px;
+      text-align:center;
+      font-size:36px;
       margin-bottom: 20px;
     }
   
@@ -174,7 +193,7 @@
   
     .servico h2 {
       font-size: 24px;
-      color: #007bff;
+      color: #050a30;
       margin-bottom: 10px;
     }
   
@@ -228,7 +247,7 @@
     }
   
     .links_serv_mobile{
-        color:black;
+        color:#050a30;
     }
   
     .contact-section {
